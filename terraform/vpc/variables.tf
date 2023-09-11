@@ -22,3 +22,8 @@ variable "enable_dns_support" {
   type    = bool
   default = true
 }
+
+variable "environment" {
+  type = string
+  default = ""
+}
