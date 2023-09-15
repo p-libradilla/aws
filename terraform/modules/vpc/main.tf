@@ -15,7 +15,7 @@ resource "aws_vpc" "this" {
 
 resource "aws_subnet" "this" {
   vpc_id     = aws_vpc.this.id
-  cidr_block = var.cidr_block
+  cidr_block = var.subnet_cidr_block
 
   tags = {
     Name = var.subnet_name
