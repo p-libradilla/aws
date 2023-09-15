@@ -1,31 +1,15 @@
-variable "vpc_name" {
-  type    = string
-  default = "custom_vpc"
+variable "vpc_name" {}
 
-}
-variable "cidr_block" {
-  type    = string
-  default = "10.0.0.0/16"
-}
+variable "cidr_block" {}
 
-variable "instance_tenancy" {
-  type    = string
-  default = "default"
-}
+variable "instance_tenancy" {}
 
-variable "enable_dns_hostnames" {
-  type    = bool
-  default = true
-}
+variable "enable_dns_hostnames" {}
 
-variable "enable_dns_support" {
-  type    = bool
-  default = true
-}
+variable "enable_dns_support" {}
 
-variable "environment" {
-  type    = string
-  default = ""
-}
+variable "environment" {}
 
 variable "subnet_name" {}
+
+variable "subnet_cidr_block" {}
