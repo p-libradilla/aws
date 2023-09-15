@@ -24,6 +24,8 @@ variable "enable_dns_support" {
 }
 
 variable "environment" {
-  type = string
+  type    = string
   default = ""
 }
+
+variable "subnet_name" {}

@@ -12,3 +12,12 @@ resource "aws_vpc" "this" {
     Name = "${var.name}-${var.environment}"
   }
 }
+
+resource "aws_subnet" "this" {
+  vpc_id     = aws_vpc.this.id
+  cidr_block = var.cidr_block
+
+  tags = {
+    Name = var.subnet_name
+  }
+}
